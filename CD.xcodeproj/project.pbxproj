@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0064E8B92D3F00E7007B71FC /* gemFile in Sources */ = {isa = PBXBuildFile; fileRef = 0064E8B82D3F00DF007B71FC /* gemFile */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0064E88A2D3EF9DE007B71FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		0064E8732D3EF9DB007B71FC /* CD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0064E8892D3EF9DE007B71FC /* CDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0064E8932D3EF9DE007B71FC /* CDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0064E8B82D3F00DF007B71FC /* gemFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = gemFile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -37,7 +42,24 @@
 			);
 			target = 0064E8722D3EF9DB007B71FC /* CD */;
 		};
+		0064E8AE2D3F0053007B71FC /* Exceptions for ".github" folder in "CD" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				workflows/pullRequest.yml,
+			);
+			target = 0064E8722D3EF9DB007B71FC /* CD */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		0064E8AF2D3F0053007B71FC /* Exceptions for ".github" folder in "Compile Sources" phase from "CD" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 0064E86F2D3EF9DB007B71FC /* Sources */;
+			membershipExceptions = (
+				workflows/pullRequest.yml,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0064E8752D3EF9DB007B71FC /* CD */ = {
@@ -56,6 +78,20 @@
 		0064E8962D3EF9DE007B71FC /* CDUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CDUITests;
+			sourceTree = "<group>";
+		};
+		0064E8A92D3EFF49007B71FC /* .github */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0064E8AE2D3F0053007B71FC /* Exceptions for ".github" folder in "CD" target */,
+				0064E8AF2D3F0053007B71FC /* Exceptions for ".github" folder in "Compile Sources" phase from "CD" target */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		0064E8B12D3F0094007B71FC /* FastLane */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FastLane;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +124,9 @@
 		0064E86A2D3EF9DB007B71FC = {
 			isa = PBXGroup;
 			children = (
+				0064E8B82D3F00DF007B71FC /* gemFile */,
+				0064E8B12D3F0094007B71FC /* FastLane */,
+				0064E8A92D3EFF49007B71FC /* .github */,
 				0064E8752D3EF9DB007B71FC /* CD */,
 				0064E88C2D3EF9DE007B71FC /* CDTests */,
 				0064E8962D3EF9DE007B71FC /* CDUITests */,
@@ -122,6 +161,8 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0064E8752D3EF9DB007B71FC /* CD */,
+				0064E8A92D3EFF49007B71FC /* .github */,
+				0064E8B12D3F0094007B71FC /* FastLane */,
 			);
 			name = CD;
 			packageProductDependencies = (
@@ -249,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0064E8B92D3F00E7007B71FC /* gemFile in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
